@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE unspecified PUBLIC "//UNKNOWN/" "unknown.dtd">
+
+
+<mapper namespace="member">
+	<select id="memberList" resultType="kr.co.domain.MemberVO">
+		SELECT Id,Name
+		FROM member  
+		
+	</select>
+	
+	<insert id="insertMember">
+		INSERT INTO member
+			(id, pw, name, email)
+		VALUES
+			(#{id},#{pw},#{name},#{email})	
+	</insert>
+	
+	<select id="viewMember" resultType="kr.co.domian.MemberVO" >
+		SELECT 
+			id,pw
+		FROM member
+		WHERE id=#{id} and pw=#{pw}
+	</select>
+
+	<update>
+		UPDATE member SET 
+		
+	</update>
+	<delete>
+		DELETE FROM member WHERE
+		
+	</delete>
+</mapper>
+
+
+
+
+
+
+
