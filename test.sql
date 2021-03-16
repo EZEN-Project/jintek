@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 -- 장바구니 테이블 
 create table cart(
 cartNo number primary key,
